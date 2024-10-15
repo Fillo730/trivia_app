@@ -1,0 +1,159 @@
+/* General Page Styling */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+/* Header Styling */
+.header {
+  background-color: #007bff;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  font-size: large;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.header-navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header-navbar-list-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.5s ease, transform 0.5s ease;
+  margin: 0 50px;
+}
+
+.header-navbar-list-link:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* Content Container Styling */
+.content-container {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 20px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.welcome-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Button Styling */
+.welcome-button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.welcome-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.welcome-button:active {
+  background-color: #004085;
+}
+
+/* Category Selection Styling */
+.select-category {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.category-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.category-select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.2s;
+}
+
+.category-select:hover {
+  border-color: #0056b3;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Number of Questions Input Styling */
+.selectNumberOfQuestions {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.selectNumberOfQuestions-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.selectNumberOfQuestions-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 200px;
+  background: linear-gradient(135deg, #ffffff, #f1f8ff);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and Focus Effects */
+.selectNumberOfQuestions-input:hover {
+  border-color: #0056b3;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.selectNumberOfQuestions-input:focus {
+  outline: none;
+  border-color: #004085;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Placeholder styling */
+.selectNumberOfQuestions-input::placeholder {
+  color: #888;
+  opacity: 0.8;
+  font-style: italic;
+}
